@@ -1,0 +1,3 @@
+[submodule "site/written"]
+	path = site/written
+	url = git@github.com:willfindlay/written-work.git
