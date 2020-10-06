@@ -1,22 +1,199 @@
-$black: #010400
-$white: #f9f7f1
-$blue:  #1f2747
-$light-blue: #01688d
-$link: $light-blue
+$black: #293132
+$white: #ffffff
+$mustard: #FFD447
+$space-cadet: #1f2041
+$cyber-grape: #4b3f72
+$quick-silver: #9da3a4
+$dark-sky-blue: #8ac2d0
+
+$fg: $white
+$bg: $quick-silver
+$left-bg: $space-cadet
+$right-bg: $cyber-grape
+
+$h1: $mustard
+//$h2: $quick-silver
+$h2: $white
+$h3: $white
+
+$cycle: $white
+$line: $space-cadet
+
+$pub-icon: $quick-silver
+$link: $dark-sky-blue
+$nav-color: $mustard
+
+$fm: 0.5vw
 
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap')
-//@import url('https://fonts.googleapis.com/css?family=Lato&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap')
+
+/* ==========================================================================
+ * Author's custom styles
+ * ==========================================================================
+
+html
+  background: $bg
+  color: $fg
+  font-family: 'Lato', sans-serif
+  font-size: 1em
+  line-height: 1.4
+
+h1
+  color: $h1
+
+h1.main
+  color: $fg
+  font-size: 250%
+
+h2
+  color: $h2
+
+h3
+  color: $h3
+  display: inline
+
+h1, h2, h3, h4, h5, h6
+  font-family: 'Raleway', sans-serif
+  margin-bottom: 10px
+  &:first-child
+    margin-top: 0px
+
+ul
+  margin-top: 0.5em
+  margin-bottom: 0.5em
+  padding-left: 1.75em
+
+.no-select
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  -webkit-user-drag: none
+  -khtml-user-drag: none
+  -moz-user-drag: none
+  -ms-user-drag: none
+  user-drag: none
+
+.headshot
+  position: relative
+  text-align: center
+  width: 100%
+  img
+    max-width: 100%
+  h1
+    position: absolute
+    bottom: 0
+    margin: 0
+    width: 100%
+
+.flex-container
+  display: flex
+  flex-direction: row
+  max-width: 1600px
+  margin: auto
+
+.flex-container>*
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+  margin-left:   $fm
+  margin-top:    $fm
+  margin-top:    $fm
+  padding:       $fm
+
+.flex-container>*:last-child
+  margin-right: $fm
+
+.left-panel
+  background: $left-bg
+  flex: 33%
+
+.right-panel
+  background: $right-bg
+  flex: 66%
+  padding-left: 30px
+  padding-right: 30px
+
+.content
+  border-left:  5px solid $left-bg
+  padding-left: $fm
+  margin-left:  1em
+
+a
+  transition: color 0.1s ease
+
+:not(nav)>a
+  color: $link
+  text-decoration: none
+  &:hover
+    color: darken($link, 30%)
+
+ul.nav
+  list-style-type: none
+  text-align: center
+  margin: 0
+  padding: 0
+  margin-top: 1vw
+  font-size: 200%
+  & a
+    text-decoration: none
+    color: $nav-color
+    &:hover
+      color: darken($nav-color, 30%)
+
+.sticky
+  position: -webkit-sticky
+  position: sticky
+  top: $fm
+  align-self: flex-start
+
+.content i
+  //color: $pub-icon
+  margin-right: 0.5em
+
+td
+  vertical-align: top
+
+/* ==========================================================================
+ * Animated text
+ * ==========================================================================
+
+//.cycle
+//  display: inline
+//  text-indent: 0.5em
+//
+//.cycle span
+//  position: absolute
+//  opacity: 0
+//  overflow: hidden
+//  width: 100%
+//  color: $cycle
+//
+//@keyframes cycleWords
+//  0%
+//    opacity: 1
+//  16.67%
+//    opacity: 0
+//  100%
+//    opacity: 0
+//
+//.cycle span
+//  animation: cycleWords 24s linear infinite 0s
+//  &:nth-child(2)
+//    animation-delay: 4s
+//  &:nth-child(3)
+//    animation-delay: 8s
+//  &:nth-child(4)
+//    animation-delay: 12s
+//  &:nth-child(5)
+//    animation-delay: 16s
+//  &:nth-child(6)
+//    animation-delay: 20s
 
 /* ==========================================================================
  * Base styles: opinionated defaults
  * ==========================================================================
-
-html
-  background: $white
-  color: $black
-  font-family: 'Raleway', sans-serif
-  font-size: 1em
-  line-height: 1.4
 
 /*
  * Remove text-shadow in selection highlight:
@@ -38,8 +215,8 @@ hr
   display: block
   height: 1px
   border: 0
-  border-top: 2px solid $blue
-  margin: 1em 0
+  border-top: 1px solid $line
+  margin: 2em 0 2em 0
   padding: 0
 
 /*
@@ -63,26 +240,6 @@ fieldset
 
 textarea
   resize: vertical
-
-/* ==========================================================================
- * Author's custom styles
- * ==========================================================================
-
-h1
-  font-size: 4em
-  color: $light-blue
-
-h2, h3, h4
-  color: $blue
-
-a
-  transition: color 0.1s ease
-
-:not(nav)>a
-  color: $link
-
-  &:hover
-      color: darken($link, 10%)
 
 /* ==========================================================================
  * Helper classes

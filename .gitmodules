@@ -1,3 +1,6 @@
 [submodule "site/written"]
 	path = site/written
 	url = git@github.com:willfindlay/written-work.git
+[submodule "site/resume"]
+	path = site/resume
+	url = git@github.com:willfindlay/resume.git

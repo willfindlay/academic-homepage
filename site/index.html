@@ -7,21 +7,215 @@
     <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <!-- <bibtex src="bib/test.bib"></bibtex> -->
   </head>
   <body>
-    <h1>William Findlay</h1>
-    <p>
-      I'm a Master's student at
-      <a href="https://carleton.ca" target="_blank">Carleton University</a>
-      and a member of the
-      <a href="https://www.cisl.carleton.ca/people.html" target="_blank">CISL research group</a>.
-    </p>
+
+  <div class='flex-container'>
+    <!--
+      Left Panel
+    -->
+    <div class='left-panel'>
+      <!--
+        Sticky Panel
+      -->
+      <div class='sticky'>
+        <div class='headshot'>
+          <h1 class='main no-select'>William Findlay</h1>
+          <img src="img/findlay_headshot.jpg" alt="William Findlay headshot"/>
+        </div>
+        <!--
+          Naviation Bar
+        -->
+        <ul class='nav no-select'>
+          <li><a href='#about'>About Me</a></li>
+          <li><a href='#teaching'>Teaching</a></li>
+          <li><a href='#education'>Education</a></li>
+          <li><a href='#publications'>Publications</a></li>
+          <li><a href='#software'>Software</a></li>
+          <li><a href='#contact'>Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--
+      Right Panel
+    -->
+    <div class='right-panel'>
+      <!--
+        About Me
+      -->
+      <h1 id='about'>About Me</h1>
+        I'm a Master's student at
+        <a href="https://carleton.ca" target="_blank">Carleton University</a>
+        and a security researcher in the
+        <a href="https://www.cisl.carleton.ca/people.html" target="_blank">Carleton Internet Security Lab (CISL)</a> research group.
+        I am currently being co-advised by <a href="http://people.scs.carleton.ca/~soma/" target="_blank">Dr. Anil Somayaji</a> and <a href="https://dbarrera.xyz/" target="_blank">Dr. David Barrera</a>.
+        You can find <a href="resume/resume.pdf" target="_blank">my r&eacute;sum&eacute; here</a>.
+        My research interests include:
+        <ul>
+          <li>Adaptive Security</li>
+          <li>Operating System Security</li>
+          <li>Extensible Operating Systems</li>
+          <li>eBPF</li>
+        </ul>
+        If you are interested in any of these areas or just want to chat,
+        feel free to reach out to me using the information at the bottom of
+        this page.
+
+      <hr/>
+
+      <h1 id='teaching'>Teaching</h1>
+      <h2>Teaching Assistant</h2>
+      <div class='content'>
+        <i class="fas fa-chalkboard-teacher"></i><h3>COMP3000 Operating Systems (Fall 2018 - Present)</h3>
+        <ul>
+          <li><a href="https://calendar.carleton.ca/undergrad/courses/COMP/COMP.pdf" target="_blank">Course description (page 3)</a></li>
+          <li>Assisted the instructor with the design, development, and distrubtion of course material</li>
+          <li>Held weekly tutorial sessions and office hours for students</li>
+          <li>Graded assignments and exams</li>
+          <li>Nominee for the "Outstanding Teaching Assistant Award" in both the <a href="awards/outstanding_ta_2018_2019.pdf" target="_blank">2018-2019</a> and <a href="awards/outstanding_ta_2019_2020.pdf" target="_blank">2019-2020</a> academic years</li>
+        </ul>
+      </div>
+
+      <hr/>
+
+      <h1 id='education'>Education</h1>
+      <h2>Master of Computer Science (Fall 2020 - Present)</h2>
+      <div class='content'>
+        <ul>
+          <li>CGPA: 12.0/12.0 (A+)</li>
+        </ul>
+      </div>
+
+      <h2>Bachelor of Computer Science, Honours (Fall 2015 - Winter 2020)</h2>
+      <div class='content'>
+        <ul>
+          <li>Major CGPA: 11.0/12.0 (A)</li>
+          <li>Graduated with high distinction</li>
+        </ul>
+      </div>
+
+      <hr/>
+
+      <h1 id='publications'>Publications</h1>
+      <h2>Refereed Conference Papers</h2>
+      <div class='content'>
+        <div class='icon-list'>
+        <table class='contact-info'>
+        <tr>
+            <td><i class="far fa-file-alt"></i></td>
+            <td><b>Findlay, W.</b>, Somayaji, A. B., Barrera, D. (2020) bpfbox: Simple Precise Process Confinement in eBPF. In Proceedings of the 2020 ACM Cloud Computing Security Workshop (CCSW'2020). To appear. [<a href="written/conference/bpfbox-ccsw2020.pdf" target="_blank">Author's Preprint</a>] [ACM Digital Library] [Slides] (Acceptance Rate: 30%)</td>
+        </tr>
+        </table>
+        </div>
+      </div>
+
+      <h2>Refereed Journal Papers</h2>
+      <div class='content'>
+        <div class='icon-list'>
+        <table class='contact-info'>
+        <tr>
+            <td><i class="far fa-file-alt"></i></td>
+            <td>Coming soon.</td>
+        </tr>
+        </table>
+        </div>
+      </div>
+
+      <h2>Miscellaneous</h2>
+      <div class='content'>
+        <div class='icon-list'>
+        <table class='contact-info'>
+        <tr>
+            <td><i class="far fa-file-alt"></i></td>
+            <td><b>Findlay, W.</b> (2020) Host-Based Anomaly Detection with Extended BPF. School of Computer Science, Carleton University. Honours Thesis. [<a href="written/coursework/undergrad-ebpH-thesis.pdf" target="_blank">Author's Copy</a>] [<a href="https://service.scs.carleton.ca/node/5159" target="_blank">Honours Project/Thesis Repository</a>] [<a href="written/talks/ebph-ccsl-2020.pdf" target="_blank">Slides</a>]</td>
+        </tr>
+        </table>
+        </div>
+      </div>
+
+      <hr/>
+
+      <h1 id='software'>Software</h1>
+      <div class='content'>
+        <div class='icon-list'>
+        <table class='contact-info'>
+        <tr>
+            <td><i class="far fa-window-restore"></i></td>
+            <td>ebpH, a host-based anomaly detection system written in eBPF [<a href="https://github.com/willfindlay/ebph" target="_blank">GitHub</a>]</td>
+        </tr>
+        <tr>
+            <td><i class="far fa-window-restore"></i></td>
+            <td>bpfbox, an eBPF-based process confinement mechanism [<a href="https://github.com/willfindlay/bpfbox" target="_blank">GitHub</a>]</td>
+        </tr>
+        <tr>
+            <td><i class="far fa-window-restore"></i></td>
+            <td>WARDEN, adaptive policy language generation and enforcement in eBPF [<a href="https://github.com/willfindlay/WARDEN" target="_blank">GitHub</a>]</td>
+        </tr>
+        </table>
+        </div>
+      </div>
+
+      <hr/>
+
+      <h1 id='contact'>Contact</h1>
+      I digitally sign my email communications using a PGP private key.
+      You can find my public key <a href="keys/email.pub.txt" target="_blank">here</a> (Expires 04/02/2030).<br/>
+      Fingerprint: <tt>D4DE DBD7 3399 D4D1 C752 FD85 8BF3 3FAD CF6B 5F10</tt>
+
+      <p>You can find me using the information below.</p>
+      <div class='content'>
+        <div class='icon-list'>
+        <table class='contact-info'>
+        <tr>
+            <td><i class="fas fa-envelope"></i></td>
+            <td>william (àŧ) williamfindlay.com</td>
+        </tr>
+        <tr>
+            <td><i class="fas fa-envelope"></i></td>
+            <td>will (àŧ) ccsl.carleton.ca</td>
+        </tr>
+        <tr>
+            <td><i class="fas fa-phone-square"></i></td>
+            <td>Signal number available on request</td>
+        </tr>
+        <tr>
+            <td><i class="fab fa-github"></i></td>
+            <td><a href="https://github.com/willfindlay">https://github.com/willfindlay</a></td>
+        </tr>
+        <tr>
+            <td><i class="fab fa-linkedin"></i></td>
+            <td><a href="https://www.linkedin.com/in/william-findlay-640856145/">https://www.linkedin.com/in/william-findlay-640856145/</a></td>
+        </tr>
+        </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--
+    <h1 class='main'>William Findlay</h1>
+    I'm a Master's student at
+    <a href="https://carleton.ca" target="_blank">Carleton University</a>
+    and a security researcher in the
+    <a href="https://www.cisl.carleton.ca/people.html" target="_blank">Carleton Internet Security Lab (CISL) research group</a>.
+    Things I care about include:
+    <div class='cycle'>
+      <span>computer security.</span>
+      <span>eBPF.</span>
+      <span>adaptive security.</span>
+      <span>operating systems.</span>
+      <span>process confinement.</span>
+      <span>anomaly detection.</span>
+    </div>
 
     <hr/>
 
-    <h2>Testificate</h2>
-    <h3>Testificate</h3>
-    Hello my name is will.
-    <!-- hello -->
+    <h2>Teaching</h2>
+    <h3>COMP3000: Operating Systems</h3>
+    -->
   </body>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.min.js"></script> -->
+  <script type="text/javascript" src="js/main.js" charset="utf-8"></script>
 </html>

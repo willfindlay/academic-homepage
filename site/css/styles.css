@@ -1,15 +1,163 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 /* ==========================================================================
- * * Base styles: opinionated defaults
+ * * Author's custom styles
  * * ========================================================================== */
 html {
-  background: #f9f7f1;
-  color: #010400;
-  font-family: "Raleway", sans-serif;
+  background: #9da3a4;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
   font-size: 1em;
   line-height: 1.4;
 }
 
+h1 {
+  color: #FFD447;
+}
+
+h1.main {
+  color: #ffffff;
+  font-size: 250%;
+}
+
+h2 {
+  color: #ffffff;
+}
+
+h3 {
+  color: #ffffff;
+  display: inline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 10px;
+}
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+  margin-top: 0px;
+}
+
+ul {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding-left: 1.75em;
+}
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -ms-user-drag: none;
+  user-drag: none;
+}
+
+.headshot {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.headshot img {
+  max-width: 100%;
+}
+.headshot h1 {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.flex-container > * {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 0.5vw;
+  margin-top: 0.5vw;
+  margin-top: 0.5vw;
+  padding: 0.5vw;
+}
+
+.flex-container > *:last-child {
+  margin-right: 0.5vw;
+}
+
+.left-panel {
+  background: #1f2041;
+  flex: 33%;
+}
+
+.right-panel {
+  background: #4b3f72;
+  flex: 66%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.content {
+  border-left: 5px solid #1f2041;
+  padding-left: 0.5vw;
+  margin-left: 1em;
+}
+
+a {
+  transition: color 0.1s ease;
+}
+
+:not(nav) > a {
+  color: #8ac2d0;
+  text-decoration: none;
+}
+:not(nav) > a:hover {
+  color: #37798a;
+}
+
+ul.nav {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 1vw;
+  font-size: 200%;
+}
+ul.nav a {
+  text-decoration: none;
+  color: #FFD447;
+}
+ul.nav a:hover {
+  color: #ad8500;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0.5vw;
+  align-self: flex-start;
+}
+
+.content i {
+  margin-right: 0.5em;
+}
+
+td {
+  vertical-align: top;
+}
+
+/* ==========================================================================
+ * * Animated text
+ * * ========================================================================== */
+/* ==========================================================================
+ * * Base styles: opinionated defaults
+ * * ========================================================================== */
 /* * Remove text-shadow in selection highlight:
  * * https://twitter.com/miketaylr/status/12228805301
  * *
@@ -27,8 +175,8 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 2px solid #1f2747;
-  margin: 1em 0;
+  border-top: 1px solid #1f2041;
+  margin: 2em 0 2em 0;
   padding: 0;
 }
 
@@ -49,29 +197,6 @@ fieldset {
 /* * Allow only vertical resizing of textareas. */
 textarea {
   resize: vertical;
-}
-
-/* ==========================================================================
- * * Author's custom styles
- * * ========================================================================== */
-h1 {
-  font-size: 4em;
-  color: #01688d;
-}
-
-h2, h3, h4 {
-  color: #1f2747;
-}
-
-a {
-  transition: color 0.1s ease;
-}
-
-:not(nav) > a {
-  color: #01688d;
-}
-:not(nav) > a:hover {
-  color: #01435a;
 }
 
 /* ==========================================================================
