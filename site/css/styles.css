@@ -4,10 +4,10 @@
  * * Author's custom styles
  * * ========================================================================== */
 html {
-  background: #9da3a4;
+  background: #e6e6e6;
   color: #ffffff;
   font-family: "Lato", sans-serif;
-  font-size: 1em;
+  font-size: 18px;
   line-height: 1.4;
 }
 
@@ -17,7 +17,6 @@ h1 {
 
 h1.main {
   color: #ffffff;
-  font-size: 250%;
 }
 
 h2 {
@@ -81,14 +80,14 @@ ul {
 
 .flex-container > * {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-left: 0.5vw;
-  margin-top: 0.5vw;
-  margin-top: 0.5vw;
-  padding: 0.5vw;
+  margin-left: 1vw;
+  margin-top: 1vw;
+  margin-top: 1vw;
+  padding: 1vw;
 }
 
 .flex-container > *:last-child {
-  margin-right: 0.5vw;
+  margin-right: 1vw;
 }
 
 .left-panel {
@@ -105,8 +104,12 @@ ul {
 
 .content {
   border-left: 5px solid #1f2041;
-  padding-left: 0.5vw;
+  padding-left: 0.5em;
   margin-left: 1em;
+}
+
+.content ul {
+  padding-left: 1em;
 }
 
 a {
@@ -126,8 +129,11 @@ ul.nav {
   text-align: center;
   margin: 0;
   padding: 0;
-  margin-top: 1vw;
-  font-size: 200%;
+  margin-top: 1em;
+  font-size: 2em;
+}
+ul.nav li {
+  margin: 0.5em 0;
 }
 ul.nav a {
   text-decoration: none;
@@ -140,7 +146,7 @@ ul.nav a:hover {
 .sticky {
   position: -webkit-sticky;
   position: sticky;
-  top: 0.5vw;
+  top: 1vw;
   align-self: flex-start;
 }
 

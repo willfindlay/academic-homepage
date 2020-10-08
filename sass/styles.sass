@@ -7,7 +7,7 @@ $quick-silver: #9da3a4
 $dark-sky-blue: #8ac2d0
 
 $fg: $white
-$bg: $quick-silver
+$bg: rgb(230,230,230)
 $left-bg: $space-cadet
 $right-bg: $cyber-grape
 
@@ -19,11 +19,10 @@ $h3: $white
 $cycle: $white
 $line: $space-cadet
 
-$pub-icon: $quick-silver
 $link: $dark-sky-blue
 $nav-color: $mustard
 
-$fm: 0.5vw
+$fm: 1vw
 
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap')
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap')
@@ -36,7 +35,7 @@ html
   background: $bg
   color: $fg
   font-family: 'Lato', sans-serif
-  font-size: 1em
+  font-size: 18px
   line-height: 1.4
 
 h1
@@ -44,7 +43,6 @@ h1
 
 h1.main
   color: $fg
-  font-size: 250%
 
 h2
   color: $h2
@@ -117,8 +115,11 @@ ul
 
 .content
   border-left:  5px solid $left-bg
-  padding-left: $fm
+  padding-left: 0.5em
   margin-left:  1em
+
+.content ul
+  padding-left: 1em
 
 a
   transition: color 0.1s ease
@@ -134,8 +135,10 @@ ul.nav
   text-align: center
   margin: 0
   padding: 0
-  margin-top: 1vw
-  font-size: 200%
+  margin-top: 1em
+  font-size: 2em
+  & li
+    margin: 0.5em 0
   & a
     text-decoration: none
     color: $nav-color
@@ -149,7 +152,6 @@ ul.nav
   align-self: flex-start
 
 .content i
-  //color: $pub-icon
   margin-right: 0.5em
 
 td
