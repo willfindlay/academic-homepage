@@ -132,9 +132,6 @@ ul.nav {
   margin-top: 1em;
   font-size: 2em;
 }
-ul.nav li {
-  margin: 0.5em 0;
-}
 ul.nav a {
   text-decoration: none;
   color: #FFD447;
@@ -273,6 +270,32 @@ textarea {
  * * These examples override the primary ('mobile first') styles.
  * * Modify as content requires.
  * * ========================================================================== */
+@media only screen and (max-width: 70em) {
+  h1.main {
+    font-size: 1.5rem;
+  }
+
+  .nav a, .nav li {
+    font-size: 1.5rem;
+  }
+
+  .nav li {
+    margin: 0.3em 0;
+  }
+}
+@media only screen and (max-width: 35em) {
+  h1.main {
+    font-size: 1.2rem;
+  }
+
+  .nav a, .nav li {
+    font-size: 1.2rem;
+  }
+
+  .nav li {
+    margin: 0.3em 0;
+  }
+}
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
