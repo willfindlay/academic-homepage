@@ -3,4 +3,4 @@
 	url = git@github.com:willfindlay/written-work.git
 [submodule "site/resume"]
 	path = site/resume
-	url = git@github.com:willfindlay/resume.git
+	url = git@github.com:willfindlay/cv.git
