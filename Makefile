@@ -1,3 +1,3 @@
 .PHONY: deploy
 deploy:
-	rsync --progress -r site/* will@gta:~/public_html
+	rsync --progress -r site/* will@ccsl:~/public_html
